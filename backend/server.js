@@ -16,19 +16,25 @@ connectDB();
 
 const app = express();
 
-// CORS configuration supporting single or comma-separated origins & development flexibility
-const allowedOrigins = process.env.CORS_ORIGIN
+// CORS: accepts comma-separated origins from env, all *.vercel.app previews, and localhost in dev
+const rawOrigins = process.env.CORS_ORIGIN
   ? process.env.CORS_ORIGIN.split(',').map((o) => o.trim())
-  : ['http://localhost:5173', 'http://127.0.0.1:5173'];
+  : [];
+const devOrigins = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+const allowedOrigins = rawOrigins.length > 0 ? rawOrigins : devOrigins;
 
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (like mobile tools, curl, or Postman)
-      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV === 'development') {
-        return callback(null, true);
-      }
-      return callback(new Error('CORS policy: This origin is not permitted'), false);
+      // Allow requests with no origin (Postman, curl, server-to-server)
+      if (!origin) return callback(null, true);
+      // Allow any Vercel preview URL (*.vercel.app) so preview deploys work
+      if (origin.endsWith('.vercel.app')) return callback(null, true);
+      // Allow explicitly listed origins
+      if (allowedOrigins.includes(origin)) return callback(null, true);
+      // Allow all origins in development
+      if (process.env.NODE_ENV !== 'production') return callback(null, true);
+      return callback(new Error(`CORS: origin ${origin} is not permitted`), false);
     },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],

@@ -1,0 +1,33 @@
+# =====================================================================
+# Root .gitignore — protects secrets and skips build/cache folders
+# =====================================================================
+
+# --- SECRET FILES — Never commit these ---
+.env
+.env.local
+.env.production
+.env.development
+
+# --- Dependencies ---
+node_modules/
+
+# --- Build output ---
+dist/
+build/
+.vite/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+
+# --- Lock files (Render uses yarn; commit yarn.lock if you create one) ---
+# package-lock.json is excluded because Render uses yarn
+backend/package-lock.json
+frontend/package-lock.json

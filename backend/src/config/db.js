@@ -1,30 +1,49 @@
 import mongoose from 'mongoose';
 
 export const connectDB = async () => {
-  const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/vibecheck';
+  const uri = process.env.MONGODB_URI;
+  const isProduction = process.env.NODE_ENV === 'production';
+
+  // In production, MONGODB_URI is required — exit loudly if missing
+  if (!uri && isProduction) {
+    console.error('❌ MONGODB_URI environment variable is not set. Set it in your Render dashboard and redeploy.');
+    process.exit(1);
+  }
+
+  const resolvedUri = uri || 'mongodb://127.0.0.1:27017/vibecheck';
 
   try {
-    // Attempt standard connection with a short timeout to fail fast if no local server
-    await mongoose.connect(uri, {
-      serverSelectionTimeoutMS: 2500,
+    await mongoose.connect(resolvedUri, {
+      serverSelectionTimeoutMS: isProduction ? 10000 : 2500,
     });
     console.log(`🌸 MongoDB Connected: ${mongoose.connection.host}/${mongoose.connection.name}`);
+    return;
   } catch (err) {
-    console.warn(`⚠️ Could not connect to MongoDB at ${uri}: ${err.message}`);
+    console.warn(`⚠️ Could not connect to MongoDB at ${resolvedUri}: ${err.message}`);
+  }
 
-    // If local MongoDB is not running, fallback to in-memory MongoDB for smooth local testing
+  // Local-only fallback: try in-memory MongoDB (devDep, skipped in prod)
+  if (!isProduction) {
     try {
-      console.log('🔄 Attempting to initialize in-memory MongoDB instance for local development...');
+      console.log('🔄 Attempting to initialize in-memory MongoDB for local development...');
       const { MongoMemoryServer } = await import('mongodb-memory-server');
       const mongod = await MongoMemoryServer.create();
       const memUri = mongod.getUri();
       await mongoose.connect(memUri);
       console.log(`✨ Connected to in-memory MongoDB at: ${memUri}`);
+      return;
     } catch (memErr) {
-      console.error(`❌ In-memory MongoDB failed to start: ${memErr.message}`);
-      console.warn('⚠️ Server will continue running, but MongoDB operations will fail until MongoDB is started.');
+      console.warn(`⚠️ In-memory MongoDB not available: ${memErr.message}`);
     }
   }
+
+  // Production with no DB → crash fast so Render can show the error
+  if (isProduction) {
+    console.error('❌ Failed to connect to MongoDB. Exiting.');
+    process.exit(1);
+  }
+
+  console.warn('⚠️ Running without MongoDB — database operations will fail.');
 };
 
 export default connectDB;
