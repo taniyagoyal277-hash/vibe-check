@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-container": "#f472b6", "surface-tint": "#a43073", "surface-dim": "#dddad4", "outline-variant": "#dac0c9", "on-surface": "#1c1c18", "secondary": "#8127cf", "on-primary-fixed": "#3d0026", "error-container": "#ffdad6", "on-tertiary-container": "#58243f", "on-secondary-fixed": "#2c0051", "on-secondary-fixed-variant": "#6900b3", "outline": "#87717a", "on-error": "#ffffff", "surface-container": "#f1ede7", "surface-bright": "#fdf9f3", "surface": "#fdf9f3", "primary": "#a43073", "inverse-on-surface": "#f4f0ea", "background": "#fdf9f3", "tertiary": "#874b69", "on-primary-container": "#6d0047", "surface-container-high": "#ebe8e2", "on-secondary-container": "#fffbff", "on-primary-fixed-variant": "#85145a", "on-tertiary-fixed-variant": "#6c3451", "surface-container-low": "#f7f3ed", "tertiary-fixed": "#ffd8e7", "surface-variant": "#e6e2dc", "secondary-container": "#9c48ea", "primary-fixed-dim": "#ffafd3", "on-background": "#1c1c18", "tertiary-fixed-dim": "#fbb1d3", "primary-fixed": "#ffd8e7", "on-error-container": "#93000a", "surface-container-highest": "#e6e2dc", "on-tertiary": "#ffffff", "secondary-fixed": "#f0dbff", "on-primary": "#ffffff", "secondary-fixed-dim": "#ddb7ff", "on-secondary": "#ffffff", "on-tertiary-fixed": "#370824", "surface-container-lowest": "#ffffff", "on-surface-variant": "#544249", "tertiary-container": "#d08aab", "inverse-primary": "#ffafd3", "error": "#ba1a1a", "inverse-surface": "#31302d" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.25rem", "margin": "1.5rem", "margin-mobile": "1.25rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-md": "1rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl": ["Epilogue"], "label-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Epilogue"], "headline-lg-mobile": ["Epilogue"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Epilogue"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Epilogue"], "body-md": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;background-color:#fdf9f3;color:#1c1c18;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen relative selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[22px]">auto_awesome</span><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Daily Vibe</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full relative px-margin-mobile space-y-space-lg select-none">
+<!-- Atmospheric Ambient Glows behind canvas -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary-fixed-dim/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 right-0 w-60 h-60 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Intro / Progress Header Card -->
+<div class="flex flex-col space-y-space-xs bg-surface-container-lowest/80 backdrop-blur-xl p-space-md rounded-lg shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="text-primary text-body-lg">💌</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Daily Check-in</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-sm py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+        Step 1 of 3
+      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">How does your heart feel right now, love?</p>
+<!-- Mini Progress Pill Track -->
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-gradient-to-r from-primary to-secondary-container h-full w-1/3 rounded-full transition-all duration-500"></div>
+</div>
+</div>
+<!-- Interactive Mood Orb Hero Section -->
+<div class="relative flex flex-col items-center justify-center p-space-lg bg-surface-container-lowest/70 backdrop-blur-xl rounded-xl shadow-[0_12px_32px_-8px_rgba(244,114,182,0.22)] overflow-hidden">
+<!-- Ambient Inner Light -->
+<div class="absolute w-44 h-44 rounded-full bg-primary-container/20 blur-2xl transition-all duration-700 pointer-events-none" id="orb-ambient"></div>
+<!-- The Glowing Mood Orb -->
+<div aria-label="Touch to pulse aura" class="relative my-space-sm group cursor-pointer" id="interactive-orb" role="button">
+<!-- Outer Pulsing Glow -->
+<div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-primary-fixed-dim via-primary-container to-secondary-fixed opacity-70 blur-xl animate-pulse" id="orb-glow"></div>
+<!-- Orb Body -->
+<div class="relative w-36 h-36 rounded-full bg-gradient-to-br from-primary-container via-surface-tint to-secondary flex flex-col items-center justify-center shadow-lg transition-transform duration-300 active:scale-95" id="orb-core">
+<span class="text-3xl transition-transform duration-300" id="orb-icon">🌸</span>
+<div class="flex items-center gap-0.5 mt-1">
+<span class="material-symbols-outlined text-white text-[14px]">bolt</span>
+<span class="font-label-sm text-label-sm text-white drop-shadow-sm font-bold" id="orb-energy">82%</span>
+</div>
+<span class="font-label-sm text-label-sm text-white/90 text-[10px] tracking-wider uppercase">Positive Vibe</span>
+</div>
+<!-- Sparkle Accents -->
+<span class="material-symbols-outlined absolute -top-1 -right-1 text-primary text-[20px] animate-bounce" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span class="material-symbols-outlined absolute -bottom-2 -left-2 text-secondary-container text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<!-- Active Mood Title -->
+<div class="text-center mt-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight" id="orb-title">Serene &amp; Warm</h3>
+<p class="font-body-sm text-body-sm text-tertiary" id="orb-subtitle">Radiating cozy calm and quiet groundedness</p>
+</div>
+<!-- Slider to fine-tune intensity -->
+<div class="w-full mt-space-md flex flex-col items-center space-y-1">
+<div class="flex justify-between w-full font-label-sm text-label-sm text-on-surface-variant px-1">
+<span>Gentle Rest</span>
+<span class="text-primary font-bold" id="intensity-readout">Vibe Intensity: 82%</span>
+<span>High Euphoria</span>
+</div>
+<input class="w-full h-2 bg-surface-container-high rounded-full accent-primary cursor-pointer transition-all" id="vibe-slider" max="100" min="10" type="range" value="82"/>
+</div>
+</div>
+<!-- Mood Pill Palette -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Choose Your Baseline Vibe</span>
+<span class="font-label-sm text-label-sm text-primary">Tap to switch</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs" id="mood-pill-container">
+<button class="mood-option flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all text-left shadow-sm" data-color="from-primary-container via-secondary-container to-secondary" data-icon="✨" data-pct="96" data-sub="Floating on pure sunshine &amp; bliss" data-vibe="Euphoric">
+<span class="text-xl">✨</span>
+<span class="font-label-md text-label-md truncate">Euphoric</span>
+</button>
+<button class="mood-option flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all text-left shadow-sm" data-color="from-primary via-primary-container to-tertiary-container" data-icon="💖" data-pct="88" data-sub="Full of tenderness and quiet appreciation" data-vibe="Grateful">
+<span class="text-xl">💖</span>
+<span class="font-label-md text-label-md truncate">Grateful</span>
+</button>
+<button class="mood-option active-mood flex items-center gap-space-xs p-space-sm rounded-lg bg-primary-fixed text-on-primary-fixed shadow-sm transition-all text-left" data-color="from-secondary-fixed via-primary-fixed-dim to-surface-tint" data-icon="☁️" data-pct="82" data-sub="Serene waters, unbothered rhythm" data-vibe="Peaceful">
+<span class="text-xl">☁️</span>
+<span class="font-label-md text-label-md truncate">Peaceful</span>
+</button>
+<button class="mood-option flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all text-left shadow-sm" data-color="from-tertiary via-surface-tint to-secondary" data-icon="🫧" data-pct="45" data-sub="Lots in the air, soft breath needed" data-vibe="Overwhelmed">
+<span class="text-xl">🫧</span>
+<span class="font-label-md text-label-md truncate">A bit overwhelmed</span>
+</button>
+<button class="mood-option flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all text-left shadow-sm" data-color="from-tertiary-container via-outline to-surface-dim" data-icon="🌧️" data-pct="32" data-sub="Tender nervous system, holding space" data-vibe="Anxious">
+<span class="text-xl">🌧️</span>
+<span class="font-label-md text-label-md truncate">Anxious</span>
+</button>
+<button class="mood-option flex items-center gap-space-xs p-space-sm rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all text-left shadow-sm" data-color="from-surface-dim via-tertiary-fixed to-outline-variant" data-icon="💤" data-pct="20" data-sub="Crying out for a cozy warm blanket" data-vibe="Exhausted">
+<span class="text-xl">💤</span>
+<span class="font-label-md text-label-md truncate">Exhausted</span>
+</button>
+</div>
+</div>
+<!-- Emotion Tags Multi-Select -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Micro-Sensations Today</span>
+<span class="font-label-sm text-label-sm text-tertiary">Select any</span>
+</div>
+<div class="flex flex-wrap gap-2" id="tag-cloud">
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-fixed text-on-primary-fixed transition-all" data-selected="true">
+        #content ✨
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all" data-selected="false">
+        #focused 🎯
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-primary-fixed text-on-primary-fixed transition-all" data-selected="true">
+        #loved 🌸
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all" data-selected="false">
+        #overthinking 🌀
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all" data-selected="false">
+        #sleepy 🌙
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-secondary-fixed text-on-secondary-fixed transition-all" data-selected="true">
+        #creative 🎨
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all" data-selected="false">
+        #motivated 🌿
+      </button>
+<button class="tag-pill px-3 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-low transition-all" data-selected="false">
+        #lonely 🕯️
+      </button>
+</div>
+</div>
+<!-- Sleep & Energy Dual Meters -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Energy Slider Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" style="font-variation-settings: 'FILL' 1;">battery_charging_full</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Energy Level</span>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full" id="energy-val-label">75% Vibrant</span>
+</div>
+<div class="relative w-full py-1">
+<input class="w-full h-2 bg-surface-container rounded-full accent-secondary cursor-pointer" id="energy-slider" max="100" min="0" type="range" value="75"/>
+</div>
+</div>
+<!-- Sleep Quality Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sleep Quality</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full">7.5 hrs · Restful</span>
+</div>
+<!-- Mini Visual Sleep Bar -->
+<div class="flex items-center gap-1.5 pt-1">
+<div class="flex-1 bg-primary/20 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 85%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Deep &amp; Sweet</span>
+</div>
+</div>
+</div>
+<!-- Daily Journal Note Prompt Box -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-md rounded-lg shadow-sm flex flex-col space-y-space-xs relative">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="vibe-note">
+<span>A few soft words for your future self...</span>
+<span class="text-primary text-[14px]">✍️</span>
+</label>
+<span class="font-label-sm text-label-sm text-tertiary" id="char-counter">0/280</span>
+</div>
+<div class="relative">
+<textarea class="w-full bg-surface-container-low/70 rounded-md p-space-sm font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all resize-none" id="vibe-note" placeholder="Today I felt so light when the afternoon breeze touched the kitchen curtains..." rows="3"></textarea>
+<!-- Voice Note Pastel Button -->
+<button aria-label="Record voice note" class="absolute bottom-2.5 right-2.5 flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed px-2.5 py-1 rounded-full text-label-sm font-label-sm hover:scale-105 active:scale-95 transition-all shadow-sm" id="voice-memo-btn">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">mic</span>
+<span>Voice vibe</span>
+</button>
+</div>
+</div>
+<!-- Photo of the Day / Gratitude Snapshot -->
+<div class="flex flex-col space-y-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold px-1">Gratitude Snapshot 📷</span>
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Upload Placeholder Box -->
+<div class="col-span-1 h-28 bg-surface-container-low rounded-lg flex flex-col items-center justify-center p-2 text-center cursor-pointer hover:bg-surface-container transition-all group" id="photo-upload-slot" role="button" tabindex="0">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform mb-1">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Add a moment that smiled</span>
+</div>
+<!-- Existing Daily Moments Mini Carousel items -->
+<div class="relative col-span-1 h-28 rounded-lg overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A warm pastel close up of a steaming lavender oat milk latte sitting on a rustic wooden cafe table next to a tiny pink rose in morning light, serene dreamy aesthetic, shallow depth of field, warm cozy vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6T2t8yhTW3huHwfClRc2po7jfXC2bawZUozEKtN1bNAbUB3D0tW7u7rrhgyR7dl_HHXPWb62CGgebfXncP2F73c_tsdwPtvyiYOCfNrgLVBRV6rWY2PaPd6lGoTzw0k8ndA1B-mnfbLzQe7OzereOxVsf_vMd5yUKjG7DIYJ4yg-sRS8kcHO2H_KwF5HkF9h7KJqJUTBg655hnnjEx0Mnb-hSJWKKvGppQ8VyA8w"/>
+<div class="absolute bottom-1 left-1 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface text-[10px]">
+          9:15 AM
+        </div>
+</div>
+<div class="relative col-span-1 h-28 rounded-lg overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Golden hour sunlight streaming through fluffy pastel cumulus clouds over a gentle wildflower meadow, cinematic soft pink and lavender sky, peaceful aesthetic, tranquil mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3VX9BAgT_qxulL9oKNXk9irpW-KPc8X1n-_bB9zbBplHBnHwwjrk7QU_ZPJRhwgWIT6FjV_ameZAvu9HWRBq_ZPzYM4hQog9Iqk-g9AKoVuYTPEvBu3rUlXYKZfeJDUMafThJ61QLu1Uv1uB3pidDVm8qxzlF_QA8acFWl8p3XO4-VnAWsXi4dz31oZmUi6-8lJkIqRXNLK6L9DE4ZguyB0_NyUugO3HExYw0ub8"/>
+<div class="absolute bottom-1 left-1 bg-surface-container-lowest/80 backdrop-blur-md px-1.5 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface text-[10px]">
+          Sunset walk
+        </div>
+</div>
+</div>
+</div>
+<!-- Primary Action Button with Glow -->
+<div class="pt-space-xs pb-space-sm flex flex-col items-center space-y-space-xs">
+<button class="w-full py-3.5 px-6 rounded-full bg-gradient-to-r from-primary-container via-primary to-secondary text-white font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_12px_32px_-8px_rgba(244,114,182,0.45)] hover:opacity-95 active:scale-[0.98] transition-all" id="save-vibe-btn">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+<span>Save Today's Vibe 💖</span>
+</button>
+<p class="font-body-sm text-body-sm text-tertiary text-center flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+      Encrypted in your personal wellness constellation
+    </p>
+</div>
+<!-- Floating Toast Feedback Overlay (Hidden by default) -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-4 transition-all duration-300 max-w-xs w-full px-4" id="vibe-toast">
+<div class="bg-surface-container-lowest/95 backdrop-blur-xl p-space-sm rounded-full shadow-lg flex items-center gap-space-xs justify-center text-center">
+<span class="text-xl">🌸</span>
+<span class="font-label-md text-label-md text-primary font-bold">Vibe saved with love &amp; intention!</span>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    const orb = document.getElementById('interactive-orb');
+    const orbCore = document.getElementById('orb-core');
+    const orbIcon = document.getElementById('orb-icon');
+    const orbEnergy = document.getElementById('orb-energy');
+    const orbTitle = document.getElementById('orb-title');
+    const orbSubtitle = document.getElementById('orb-subtitle');
+    const orbGlow = document.getElementById('orb-glow');
+    const vibeSlider = document.getElementById('vibe-slider');
+    const intensityReadout = document.getElementById('intensity-readout');
+    const energySlider = document.getElementById('energy-slider');
+    const energyLabel = document.getElementById('energy-val-label');
+    const tagPills = document.querySelectorAll('.tag-pill');
+    const moodOptions = document.querySelectorAll('.mood-option');
+    const noteArea = document.getElementById('vibe-note');
+    const charCounter = document.getElementById('char-counter');
+    const saveBtn = document.getElementById('save-vibe-btn');
+    const toast = document.getElementById('vibe-toast');
+    const voiceBtn = document.getElementById('voice-memo-btn');
+
+    // Orb Tap Pulse Delight
+    if (orb) {
+      orb.addEventListener('click', () => {
+        orbCore.classList.add('scale-110');
+        setTimeout(() => orbCore.classList.remove('scale-110'), 250);
+      });
+    }
+
+    // Mood Selector Switching
+    moodOptions.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        moodOptions.forEach((m) => {
+          m.classList.remove('bg-primary-fixed', 'text-on-primary-fixed', 'active-mood');
+          m.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        btn.classList.add('bg-primary-fixed', 'text-on-primary-fixed', 'active-mood');
+
+        const vibe = btn.dataset.vibe;
+        const icon = btn.dataset.icon;
+        const pct = btn.dataset.pct;
+        const sub = btn.dataset.sub;
+
+        if (orbTitle) orbTitle.textContent = vibe;
+        if (orbIcon) orbIcon.textContent = icon;
+        if (orbEnergy) orbEnergy.textContent = pct + '%';
+        if (orbSubtitle) orbSubtitle.textContent = sub;
+        if (vibeSlider) vibeSlider.value = pct;
+        if (intensityReadout) intensityReadout.textContent = `Vibe Intensity: ${pct}%`;
+      });
+    });
+
+    // Slider sync with orb
+    if (vibeSlider) {
+      vibeSlider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        if (orbEnergy) orbEnergy.textContent = val + '%';
+        if (intensityReadout) intensityReadout.textContent = `Vibe Intensity: ${val}%`;
+      });
+    }
+
+    // Energy Slider
+    if (energySlider && energyLabel) {
+      energySlider.addEventListener('input', (e) => {
+        const val = e.target.value;
+        let descriptor = 'Gentle';
+        if (val > 70) descriptor = 'Vibrant';
+        else if (val > 40) descriptor = 'Balanced';
+        else descriptor = 'Soft Rest';
+        energyLabel.textContent = `${val}% ${descriptor}`;
+      });
+    }
+
+    // Multi-Select Emotion Tag Pills
+    tagPills.forEach((tag) => {
+      tag.addEventListener('click', () => {
+        const isSelected = tag.getAttribute('data-selected') === 'true';
+        if (isSelected) {
+          tag.setAttribute('data-selected', 'false');
+          tag.classList.remove('bg-primary-fixed', 'text-on-primary-fixed', 'bg-secondary-fixed', 'text-on-secondary-fixed');
+          tag.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        } else {
+          tag.setAttribute('data-selected', 'true');
+          tag.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+          tag.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+        }
+      });
+    });
+
+    // Note character counter
+    if (noteArea && charCounter) {
+      noteArea.addEventListener('input', (e) => {
+        const len = e.target.value.length;
+        charCounter.textContent = `${len}/280`;
+      });
+    }
+
+    // Voice memo toggle delight
+    let isRecording = false;
+    if (voiceBtn) {
+      voiceBtn.addEventListener('click', () => {
+        isRecording = !isRecording;
+        if (isRecording) {
+          voiceBtn.classList.remove('bg-secondary-fixed', 'text-on-secondary-fixed');
+          voiceBtn.classList.add('bg-primary', 'text-on-primary', 'animate-pulse');
+          voiceBtn.querySelector('span:last-child').textContent = 'Listening...';
+        } else {
+          voiceBtn.classList.remove('bg-primary', 'text-on-primary', 'animate-pulse');
+          voiceBtn.classList.add('bg-secondary-fixed', 'text-on-secondary-fixed');
+          voiceBtn.querySelector('span:last-child').textContent = 'Voice saved';
+        }
+      });
+    }
+
+    // Save Vibe Flow
+    if (saveBtn && toast) {
+      saveBtn.addEventListener('click', () => {
+        toast.classList.remove('opacity-0', 'translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+
+        saveBtn.classList.add('scale-95');
+        setTimeout(() => saveBtn.classList.remove('scale-95'), 180);
+
+        setTimeout(() => {
+          toast.classList.remove('opacity-100', 'translate-y-0');
+          toast.classList.add('opacity-0', 'translate-y-4');
+        }, 2600);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-4px_20px_rgba(244,114,182,0.12)]" data-active-classes="text-primary font-bold"><div class="h-16 px-gutter flex items-center justify-around"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-all" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm tracking-wide">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] transition-all text-primary font-bold" data-path="daily-vibe" href="#"><span class="material-symbols-outlined text-[24px]">sentiment_satisfied</span><span class="font-label-sm text-label-sm tracking-wide">Vibe Log</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-all" data-path="insights" href="#"><span class="material-symbols-outlined text-[24px]">insights</span><span class="font-label-sm text-label-sm tracking-wide">Insights</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-primary transition-all" data-path="space" href="#"><span class="material-symbols-outlined text-[24px]">self_improvement</span><span class="font-label-sm text-label-sm tracking-wide">Space</span></a></div></nav></body></html>

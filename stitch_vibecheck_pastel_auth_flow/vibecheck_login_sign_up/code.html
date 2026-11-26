@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;min-height:100%;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#31302d","secondary-fixed":"#f0dbff","primary-container":"#f472b6","outline-variant":"#dac0c9","on-primary-fixed-variant":"#85145a","error":"#ba1a1a","background":"#fdf9f3","surface-container-low":"#f7f3ed","primary-fixed-dim":"#ffafd3","surface-container-lowest":"#ffffff","on-primary":"#ffffff","secondary-container":"#9c48ea","surface-container-highest":"#e6e2dc","on-background":"#1c1c18","primary-fixed":"#ffd8e7","on-error":"#ffffff","surface-variant":"#e6e2dc","on-secondary-fixed-variant":"#6900b3","on-surface":"#1c1c18","tertiary-fixed":"#ffd8e7","tertiary-container":"#d08aab","surface-container-high":"#ebe8e2","secondary-fixed-dim":"#ddb7ff","inverse-primary":"#ffafd3","surface":"#fdf9f3","outline":"#87717a","error-container":"#ffdad6","on-tertiary-fixed-variant":"#6c3451","tertiary-fixed-dim":"#fbb1d3","on-secondary":"#ffffff","on-secondary-fixed":"#2c0051","tertiary":"#874b69","on-primary-container":"#6d0047","secondary":"#8127cf","on-tertiary-fixed":"#370824","surface-dim":"#dddad4","on-surface-variant":"#544249","primary":"#a43073","on-secondary-container":"#fffbff","surface-tint":"#a43073","on-tertiary":"#ffffff","on-error-container":"#93000a","on-tertiary-container":"#58243f","on-primary-fixed":"#3d0026","surface-container":"#f1ede7","inverse-on-surface":"#f4f0ea","surface-bright":"#fdf9f3"},borderRadius:{DEFAULT:"1rem",lg:"2rem",xl:"3rem",full:"9999px"},spacing:{"margin":"1.5rem","gutter":"1rem","space-sm":"0.5rem","space-md":"1rem","space-xl":"2.25rem","gutter-mobile":"0.75rem","space-xs":"0.25rem","margin-mobile":"1.25rem","space-lg":"1.5rem"},fontFamily:{"body-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Epilogue"],"headline-lg":["Epilogue"],"headline-sm":["Epilogue"],"headline-xl-mobile":["Epilogue"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl":["Epilogue"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-xl-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.03em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-xl":["36px",{lineHeight:"44px",letterSpacing:"-0.03em",fontWeight:"700"}],"label-lg":["15px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"label-md":["13px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-surface text-on-surface min-h-screen relative overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden"><div class="absolute -top-24 -left-20 w-80 h-80 rounded-full bg-primary-fixed/40 blur-3xl"></div><div class="absolute top-1/4 -right-24 w-88 h-88 rounded-full bg-secondary-fixed/45 blur-3xl"></div><div class="absolute -bottom-20 left-1/3 w-96 h-96 rounded-full bg-surface-container-high/60 blur-3xl"></div></div><div class="fixed top-0 inset-x-0 z-50 pt-safe bg-surface/40 backdrop-blur-xl"><div class="h-11 px-6 flex items-center justify-between text-on-surface"><span class="font-label-md text-label-md font-semibold tracking-tight">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div></div><main class="flex flex-col relative w-full min-h-screen pt-11 pb-safe px-margin-mobile bg-transparent"><div class="flex flex-col w-full pb-8 relative">
+<!-- Ambient Floating Ornaments -->
+<div class="absolute -top-4 right-2 pointer-events-none text-primary-container/30 animate-pulse">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">arrow_back_ios_new</span>
+</div>
+<div class="absolute top-28 left-0 pointer-events-none text-secondary-container/20">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="absolute top-72 -right-1 pointer-events-none text-primary/20">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<!-- Brand Mascot & Identity Header -->
+<header class="flex flex-col items-center justify-center pt-2 pb-5 text-center relative z-10">
+<div class="relative flex items-center justify-center mb-3">
+<!-- Glow backing halo -->
+<div class="absolute w-24 h-24 rounded-full bg-primary-fixed/70 blur-xl"></div>
+<!-- Mascot Container -->
+<div class="relative w-20 h-20 rounded-full bg-surface-container-lowest/90 shadow-xl shadow-primary-container/15 flex items-center justify-center overflow-hidden transform active:scale-95 transition-transform duration-300">
+<img alt="VibeCheck Mascot" class="w-16 h-16 object-contain drop-shadow-sm select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrAXvDyk6WO6_5Pdaib1N0CbS3lV2NDaVxCC_1RDnEjDMWFNsfH4A6MauF1rm3COQWZNuGseKJMxpgsJ1BaDXdWCpgGvFT6EUtC5RFWB308hpsNcIiSlyhXkRPmhgbdBJK0vgNCriUjlIKiX1JSkhWRu7V4oF-Sy2FNpO09Emfn9-5d7OA0q-Zn3oKjNddrspRpT__qcEkrQfCn12c-vLDLSoeumDWbla2BTfVKYZYl1"/>
+</div>
+<!-- Accent Sparkle Pin -->
+<div class="absolute -bottom-1 -right-1 w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md shadow-primary/25">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<!-- App Title & Tagline -->
+<div class="flex items-center gap-1.5 justify-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-on-surface font-bold">VibeCheck</h1>
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold shadow-sm">v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 transition-all duration-300" id="app-dynamic-subtitle">
+      Your pastel wellness companion
+    </p>
+</header>
+<!-- Segmented Control (Pill Switcher) -->
+<nav aria-label="Authentication Selector" class="w-full max-w-[360px] mx-auto mb-4">
+<div class="p-1 rounded-full bg-surface-container-high/80 backdrop-blur-md flex items-center relative shadow-inner">
+<button class="flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 shadow-sm bg-surface-container-lowest text-primary font-bold active:scale-[0.98]" id="tab-login-btn" onclick="switchAuthTab('login')" type="button">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">login</span>
+<span>Log In</span>
+</button>
+<button class="flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 text-on-surface-variant font-semibold hover:text-on-surface active:scale-[0.98]" id="tab-signup-btn" onclick="switchAuthTab('signup')" type="button">
+<span class="material-symbols-outlined text-[17px]">favorite</span>
+<span>Sign Up</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+</button>
+</div>
+</nav>
+<!-- Main Unified Glassmorphic Surface Card -->
+<section class="w-full max-w-[420px] mx-auto rounded-3xl bg-surface-container-lowest/80 backdrop-blur-2xl shadow-xl shadow-primary-container/10 p-5 sm:p-6 transition-all duration-300">
+<!-- Dynamic Heading Context Block -->
+<div class="mb-5 text-left">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight" id="dynamic-title">
+          Welcome Back! 💕
+        </h2>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold flex items-center gap-1" id="tab-status-pill">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+          Portal
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1" id="dynamic-desc">
+        Your little happy space missed you.
+      </p>
+</div>
+<!-- ============================================== -->
+<!-- VIEW 1: LOG IN FORM                           -->
+<!-- ============================================== -->
+<form class="flex flex-col space-y-3.5 transition-opacity duration-200" id="login-form-view" onsubmit="handleFormSubmit(event, 'login')">
+<!-- Input: Identity -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="login-id">
+<span>Email or Username</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">alternate_email</span>
+<input class="w-full pl-11 pr-4 py-3 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="login-id" placeholder="mia@vibecheck.app or @vibingmia" required="" type="text"/>
+</div>
+</div>
+<!-- Input: Password -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center justify-between" for="login-password">
+<span>Secret Password</span>
+<span class="font-label-sm text-label-sm text-outline">Encrypted</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">lock</span>
+<input class="w-full pl-11 pr-11 py-3 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="login-password" placeholder="••••••••••••" required="" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3.5 text-outline hover:text-primary transition-colors flex items-center justify-center p-1 rounded-full" onclick="togglePasswordVisibility('login-password', this)" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember Me & Forgot Password Row -->
+<div class="flex items-center justify-between pt-1 pb-1">
+<label class="flex items-center gap-2 cursor-pointer select-none group">
+<div class="relative flex items-center justify-center">
+<input checked="" class="peer sr-only" id="login-remember" type="checkbox"/>
+<div class="w-5 h-5 rounded-full bg-surface-container-high peer-checked:bg-primary transition-all duration-200 flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-on-primary text-[13px] opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface transition-colors">Keep me in</span>
+</label>
+<button class="font-label-md text-label-md font-bold text-primary hover:text-on-primary-fixed-variant transition-colors flex items-center gap-0.5 underline decoration-primary/30 underline-offset-4" onclick="openForgotDrawer()" type="button">
+<span>Forgot pass?</span>
+</button>
+</div>
+<!-- Submit CTA -->
+<button class="w-full py-3.5 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-lg shadow-primary-container/30 hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-2" id="login-submit-btn" type="submit">
+<span class="material-symbols-outlined text-[19px]">arrow_back_ios_new</span>
+<span>Log In to My Space 💖</span>
+</button>
+<!-- Quick Context Switcher Bottom -->
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant pt-2">
+        New to VibeCheck? 
+        <button class="font-bold text-primary hover:underline ml-1" onclick="switchAuthTab('signup')" type="button">
+          Create an Account ✨
+        </button>
+</p>
+</form>
+<!-- ============================================== -->
+<!-- VIEW 2: SIGN UP FORM                          -->
+<!-- ============================================== -->
+<form class="hidden flex flex-col space-y-3 transition-opacity duration-200" id="signup-form-view" onsubmit="handleFormSubmit(event, 'signup')">
+<!-- Input: Full Name -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="signup-name">
+<span>Your Sweet Name</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">sentiment_satisfied</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="signup-name" placeholder="e.g. Mia Blossom" type="text"/>
+</div>
+</div>
+<!-- Input: Email -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="signup-email">
+<span>Email Address</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">mail</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="signup-email" placeholder="mia@vibecheck.app" type="email"/>
+</div>
+</div>
+<!-- Input: Username -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="signup-username">
+<span>Choose Username</span>
+<span class="text-tertiary font-label-sm text-label-sm ml-auto">@handle</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">badge</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="signup-username" placeholder="vibingmia" type="text"/>
+</div>
+</div>
+<!-- Input: Password & Strength -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center justify-between" for="signup-password">
+<span>Create Password</span>
+<span class="font-label-sm text-label-sm text-outline" id="strength-label">Gentle</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">lock</span>
+<input class="w-full pl-11 pr-11 py-2.5 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="signup-password" oninput="evaluatePasswordStrength(this.value)" placeholder="Min. 8 cozy characters" type="password"/>
+<button aria-label="Toggle password visibility" class="absolute right-3.5 text-outline hover:text-primary transition-colors flex items-center justify-center p-1 rounded-full" onclick="togglePasswordVisibility('signup-password', this)" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility</span>
+</button>
+</div>
+<!-- 4-Bar Pastel Password Strength Indicator -->
+<div class="grid grid-cols-4 gap-1.5 pt-1 px-1">
+<div class="h-1.5 rounded-full bg-surface-container-highest transition-colors duration-300" id="bar-1"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest transition-colors duration-300" id="bar-2"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest transition-colors duration-300" id="bar-3"></div>
+<div class="h-1.5 rounded-full bg-surface-container-highest transition-colors duration-300" id="bar-4"></div>
+</div>
+</div>
+<!-- Input: Confirm Password -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1" for="signup-confirm-password">
+<span>Repeat Password</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">verified_user</span>
+<input class="w-full pl-11 pr-11 py-2.5 rounded-2xl bg-surface-container-low/70 text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-primary-container/20 transition-all duration-200" id="signup-confirm-password" placeholder="Match your cozy password" type="password"/>
+<button aria-label="Toggle confirm password visibility" class="absolute right-3.5 text-outline hover:text-primary transition-colors flex items-center justify-center p-1 rounded-full" onclick="togglePasswordVisibility('signup-confirm-password', this)" type="button">
+<span class="material-symbols-outlined text-[19px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Agreement Checkbox -->
+<div class="flex items-start gap-2.5 pt-1.5">
+<div class="relative flex items-center justify-center pt-0.5">
+<input class="peer sr-only" id="signup-terms" required="" type="checkbox"/>
+<div class="w-5 h-5 rounded-full bg-surface-container-high peer-checked:bg-primary transition-all duration-200 flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-on-primary text-[13px] opacity-0 peer-checked:opacity-100 font-bold transition-opacity">check</span>
+</div>
+</div>
+<label class="font-body-sm text-body-sm text-on-surface-variant select-none leading-tight cursor-pointer" for="signup-terms">
+          I agree to the <span class="text-primary font-semibold underline">Terms</span> &amp; embrace the warm <span class="text-primary font-semibold underline">Privacy Policy</span> 🌸
+        </label>
+</div>
+<!-- Submit CTA -->
+<button class="w-full py-3.5 px-6 rounded-full bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-bold shadow-lg shadow-secondary-container/25 hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-2 mt-2" id="signup-submit-btn" type="submit">
+<span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>Create My Account ✨</span>
+</button>
+<!-- Quick Context Switcher Bottom -->
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant pt-2">
+        Already have an account? 
+        <button class="font-bold text-primary hover:underline ml-1" onclick="switchAuthTab('login')" type="button">
+          Log In 💕
+        </button>
+</p>
+</form>
+<!-- Social Authentication Divider -->
+<div class="relative flex items-center justify-center my-5">
+<div class="w-full h-px bg-surface-container-highest"></div>
+<div class="absolute px-3 bg-surface-container-lowest font-label-sm text-label-sm text-outline flex items-center gap-1.5 uppercase tracking-wider rounded-full shadow-xs">
+<span class="material-symbols-outlined text-[13px] text-primary-container" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>or softly connect</span>
+<span class="material-symbols-outlined text-[13px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+<!-- Social Buttons Stack -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Google Auth Button -->
+<button class="py-3 px-4 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 shadow-xs" onclick="triggerSocialMock('Google')" type="button">
+<svg class="w-4 h-4 flex-shrink-0" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="truncate">Google</span>
+</button>
+<!-- Apple Auth Button -->
+<button class="py-3 px-4 rounded-2xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 shadow-xs" onclick="triggerSocialMock('Apple')" type="button">
+<svg class="w-4 h-4 flex-shrink-0 fill-current" viewbox="0 0 24 24">
+<path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.67-.82 1.12-1.96.99-3.1-.96.04-2.13.64-2.82 1.45-.61.71-1.14 1.87-.99 2.98 1.08.08 2.17-.55 2.82-1.33z"></path>
+</svg>
+<span class="truncate">Apple ID</span>
+</button>
+</div>
+<!-- Reassurance Badge -->
+<div class="mt-5 pt-3 flex items-center justify-center gap-1.5 text-center text-outline">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm">Safe &amp; warm end-to-end encrypted space</span>
+</div>
+</section>
+<!-- ============================================== -->
+<!-- MODAL DRAWER: FORGOT PASSWORD                  -->
+<!-- ============================================== -->
+<div aria-modal="true" class="fixed inset-0 z-50 pointer-events-none opacity-0 transition-opacity duration-300 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-on-surface/40 backdrop-blur-sm" id="forgot-modal" role="dialog">
+<!-- Drawer backdrop tap close -->
+<div class="absolute inset-0" onclick="closeForgotDrawer()"></div>
+<!-- Drawer Content Surface -->
+<div class="relative w-full max-w-[400px] rounded-t-3xl sm:rounded-3xl bg-surface-container-lowest p-6 shadow-2xl transform translate-y-full sm:translate-y-4 transition-transform duration-300 z-10" id="forgot-sheet">
+<!-- Drawer Pull Handle (Mobile) -->
+<div class="w-12 h-1.5 rounded-full bg-surface-container-highest mx-auto mb-4 sm:hidden"></div>
+<!-- Icon & Headline -->
+<div class="flex items-center gap-3 mb-4">
+<div class="w-12 h-12 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]">mark_email_unread</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lost your key? 💌</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We'll help you slip back in gently.</p>
+</div>
+</div>
+<!-- Body / Form -->
+<div class="space-y-3.5" id="forgot-form-container">
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Enter your registered email address below. We'll send an enchanted recovery link right away.
+        </p>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[20px] pointer-events-none">mail</span>
+<input class="w-full pl-11 pr-4 py-3 rounded-2xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline-variant outline-none focus:bg-surface-container-lowest focus:shadow-md focus:shadow-secondary-container/20 transition-all" id="forgot-email" placeholder="mia@vibecheck.app" type="email"/>
+</div>
+<button class="w-full py-3.5 px-6 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md shadow-primary-container/30 hover:brightness-105 active:scale-[0.98] transition-all flex items-center justify-center gap-2" id="forgot-send-btn" onclick="sendPasswordResetLink()" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Send Recovery Link ✨</span>
+</button>
+<button class="w-full py-2.5 text-center font-label-md text-label-md font-semibold text-outline hover:text-on-surface transition-colors" onclick="closeForgotDrawer()" type="button">
+          Nevermind, I remembered!
+        </button>
+</div>
+<!-- Success State (Hidden initially) -->
+<div class="hidden text-center py-4 space-y-3" id="forgot-success-state">
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mx-auto shadow-sm animate-bounce">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mail is on the way!</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Check your cozy inbox for the magic reset link. It expires in 15 minutes.
+        </p>
+<button class="w-full py-3 px-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md font-bold mt-2" onclick="closeForgotDrawer()" type="button">
+          Back to Log In
+        </button>
+</div>
+</div>
+</div>
+<!-- ============================================== -->
+<!-- TOAST NOTIFICATION SYSTEM                      -->
+<!-- ============================================== -->
+<div class="fixed bottom-6 inset-x-4 max-w-sm mx-auto z-50 pointer-events-none opacity-0 translate-y-6 transition-all duration-300 flex items-center gap-3 p-4 rounded-2xl bg-on-surface text-inverse-on-surface shadow-2xl backdrop-blur-xl" id="toast-notification">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0" id="toast-icon-wrap">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-lg text-label-lg font-bold leading-tight" id="toast-title">Welcome Home!</p>
+<p class="font-body-sm text-body-sm opacity-90 truncate" id="toast-msg">Entering your happy space...</p>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Vanilla Logic -->
+<script>
+  let currentActiveTab = 'login';
+
+  function switchAuthTab(targetTab) {
+    if (currentActiveTab === targetTab) return;
+    currentActiveTab = targetTab;
+
+    const loginView = document.getElementById('login-form-view');
+    const signupView = document.getElementById('signup-form-view');
+    const loginBtn = document.getElementById('tab-login-btn');
+    const signupBtn = document.getElementById('tab-signup-btn');
+    const title = document.getElementById('dynamic-title');
+    const desc = document.getElementById('dynamic-desc');
+    const sub = document.getElementById('app-dynamic-subtitle');
+    const pill = document.getElementById('tab-status-pill');
+
+    if (targetTab === 'signup') {
+      // Form view swap
+      loginView.classList.add('hidden');
+      signupView.classList.remove('hidden');
+
+      // Segmented control button styling
+      signupBtn.className = "flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 shadow-sm bg-surface-container-lowest text-secondary-container font-bold active:scale-[0.98]";
+      loginBtn.className = "flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 text-on-surface-variant font-semibold hover:text-on-surface active:scale-[0.98]";
+
+      // Header copy transitions
+      title.innerText = "Let's get to know you! 💗";
+      desc.innerText = "Create your little happy space with VibeCheck.";
+      sub.innerText = "Begin your gentle self-reflection journey";
+      pill.innerHTML = `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">stars</span> New Glow`;
+    } else {
+      // Form view swap
+      signupView.classList.add('hidden');
+      loginView.classList.remove('hidden');
+
+      // Segmented control button styling
+      loginBtn.className = "flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 shadow-sm bg-surface-container-lowest text-primary font-bold active:scale-[0.98]";
+      signupBtn.className = "flex-1 py-2.5 rounded-full font-label-lg text-label-lg transition-all duration-300 relative z-10 flex items-center justify-center gap-1.5 text-on-surface-variant font-semibold hover:text-on-surface active:scale-[0.98]";
+
+      // Header copy transitions
+      title.innerText = "Welcome Back! 💕";
+      desc.innerText = "Your little happy space missed you.";
+      sub.innerText = "Your pastel wellness companion";
+      pill.innerHTML = `<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">lock_open</span> Portal`;
+    }
+  }
+
+  function togglePasswordVisibility(inputId, btnEl) {
+    const input = document.getElementById(inputId);
+    const icon = btnEl.querySelector('.material-symbols-outlined');
+    if (!input || !icon) return;
+
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.innerText = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.innerText = 'visibility';
+    }
+  }
+
+  function evaluatePasswordStrength(val) {
+    const b1 = document.getElementById('bar-1');
+    const b2 = document.getElementById('bar-2');
+    const b3 = document.getElementById('bar-3');
+    const b4 = document.getElementById('bar-4');
+    const label = document.getElementById('strength-label');
+
+    const resetBars = () => {
+      [b1, b2, b3, b4].forEach(b => {
+        b.className = "h-1.5 rounded-full bg-surface-container-highest transition-colors duration-300";
+      });
+    };
+
+    if (!val || val.length === 0) {
+      resetBars();
+      label.innerText = "Gentle";
+      label.className = "font-label-sm text-label-sm text-outline";
+      return;
+    }
+
+    if (val.length < 5) {
+      resetBars();
+      b1.className = "h-1.5 rounded-full bg-error transition-colors duration-300";
+      label.innerText = "Too soft";
+      label.className = "font-label-sm text-label-sm text-error font-bold";
+    } else if (val.length < 8) {
+      resetBars();
+      b1.className = "h-1.5 rounded-full bg-primary-fixed-dim transition-colors duration-300";
+      b2.className = "h-1.5 rounded-full bg-primary-fixed-dim transition-colors duration-300";
+      label.innerText = "Getting there";
+      label.className = "font-label-sm text-label-sm text-primary font-bold";
+    } else if (val.length < 11) {
+      resetBars();
+      b1.className = "h-1.5 rounded-full bg-primary-container transition-colors duration-300";
+      b2.className = "h-1.5 rounded-full bg-primary-container transition-colors duration-300";
+      b3.className = "h-1.5 rounded-full bg-primary-container transition-colors duration-300";
+      label.innerText = "Sweet & Safe";
+      label.className = "font-label-sm text-label-sm text-primary-container font-bold";
+    } else {
+      b1.className = "h-1.5 rounded-full bg-secondary-container transition-colors duration-300";
+      b2.className = "h-1.5 rounded-full bg-secondary-container transition-colors duration-300";
+      b3.className = "h-1.5 rounded-full bg-secondary-container transition-colors duration-300";
+      b4.className = "h-1.5 rounded-full bg-secondary-container transition-colors duration-300";
+      label.innerText = "Magical ✨";
+      label.className = "font-label-sm text-label-sm text-secondary-container font-bold";
+    }
+  }
+
+  function handleFormSubmit(event, formType) {
+    event.preventDefault();
+
+    const btn = formType === 'login' 
+      ? document.getElementById('login-submit-btn')
+      : document.getElementById('signup-submit-btn');
+
+    const originalContent = btn.innerHTML;
+    btn.innerHTML = `
+      <svg class="animate-spin h-5 w-5 text-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+      </svg>
+      <span>Tuning your vibes...</span>
+    `;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = originalContent;
+      btn.disabled = false;
+
+      if (formType === 'login') {
+        showToast("Welcome Home! 💕", "Entering your cozy space now...");
+      } else {
+        showToast("Account Created! 🌸", "Welcome to your little happy space!");
+      }
+    }, 1100);
+  }
+
+  function triggerSocialMock(provider) {
+    showToast(`${provider} Connected ✨`, "Softly tuning into your profile...");
+  }
+
+  function openForgotDrawer() {
+    const modal = document.getElementById('forgot-modal');
+    const sheet = document.getElementById('forgot-sheet');
+    const formCont = document.getElementById('forgot-form-container');
+    const successCont = document.getElementById('forgot-success-state');
+
+    formCont.classList.remove('hidden');
+    successCont.classList.add('hidden');
+
+    modal.classList.remove('pointer-events-none', 'opacity-0');
+    modal.classList.add('opacity-100');
+    sheet.classList.remove('translate-y-full', 'sm:translate-y-4');
+    sheet.classList.add('translate-y-0');
+  }
+
+  function closeForgotDrawer() {
+    const modal = document.getElementById('forgot-modal');
+    const sheet = document.getElementById('forgot-sheet');
+
+    modal.classList.add('opacity-0');
+    sheet.classList.remove('translate-y-0');
+    sheet.classList.add('translate-y-full', 'sm:translate-y-4');
+    
+    setTimeout(() => {
+      modal.classList.add('pointer-events-none');
+    }, 300);
+  }
+
+  function sendPasswordResetLink() {
+    const emailVal = document.getElementById('forgot-email').value;
+    const formCont = document.getElementById('forgot-form-container');
+    const successCont = document.getElementById('forgot-success-state');
+    const sendBtn = document.getElementById('forgot-send-btn');
+
+    sendBtn.innerHTML = `<span>Sending magic...</span>`;
+    setTimeout(() => {
+      formCont.classList.add('hidden');
+      successCont.classList.remove('hidden');
+      sendBtn.innerHTML = `<span class="material-symbols-outlined text-[18px]">send</span><span>Send Recovery Link ✨</span>`;
+      showToast("Reset Link Sent! 💌", "Check your inbox for instructions.");
+    }, 800);
+  }
+
+  function showToast(title, msg) {
+    const toast = document.getElementById('toast-notification');
+    document.getElementById('toast-title').innerText = title;
+    document.getElementById('toast-msg').innerText = msg;
+
+    toast.classList.remove('opacity-0', 'translate-y-6', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-6', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 3200);
+  }
+</script></main></body></html>
